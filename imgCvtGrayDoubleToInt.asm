@@ -22,7 +22,7 @@ rowLoop:
 colLoop:
     movsd xmm0, [rsi]      ; load double value
     mulsd xmm0, [scale]    ; multiply by 255.0
-    cvttsd2si rax, xmm0    ; convert to integer
+    cvtsd2si rax, xmm0    ; convert to integer
     mov [rdi], al          ; store uint8 value
     
     add rsi, 8             ; next double (8 bytes)
