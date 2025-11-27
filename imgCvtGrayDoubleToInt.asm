@@ -1,5 +1,6 @@
 bits 64
 global imgCvtGrayDoubleToInt
+Default rel
 
 section .data
 scale: dq 255.0
